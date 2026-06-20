@@ -1,0 +1,37 @@
+/* Element Plus Dark Theme Overrides */
+.el-card {
+  --el-card-bg-color: #1a2030;
+  border-color: #2a3548;
+  border-radius: 12px;
+  .el-card__header {
+    border-bottom-color: #2a3548;
+    padding: 14px 20px;
+  }
+  .el-card__body { padding: 20px; }
+}
+
+.el-table {
+  --el-table-bg-color: transparent;
+  --el-table-header-bg-color: transparent;
+  --el-table-row-hover-bg-color: rgba(255,255,255,.03);
+  --el-table-border-color: #2a3548;
+  --el-table-header-text-color: #6b7591;
+  th { font-size: 11px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; }
+}
+
+.el-menu {
+  --el-menu-bg-color: transparent;
+  --el-menu-hover-bg-color: #1e2535;
+  --el-menu-active-color: var(--el-color-primary);
+  --el-menu-item-height: 40px;
+  .el-menu-item.is-active { background: rgba(79,142,247,.12); border-right: 2px solid var(--el-color-primary); }
+}
+
+.el-input__wrapper { background: #1e2535; box-shadow: 0 0 0 1px #2a3548 inset; }
+.el-select .el-input__wrapper { background: #1e2535; }
+.el-textarea__inner { background: #1e2535; }
+
+.el-dialog { --el-dialog-bg-color: #1a2030; border: 1px solid #2a3548; border-radius: 16px; }
+.el-drawer__body { padding: 16px; }
+.el-pagination { --el-pagination-bg-color: transparent; }
+.el-tag { font-size: 11px; font-weight: 600; }

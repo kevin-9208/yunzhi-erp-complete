@@ -1,0 +1,45 @@
+@use './variables' as *;
+@use './element-override' as *;
+
+* { box-sizing: border-box; }
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --sidebar-bg: #161b27;
+  --topbar-h: 56px;
+}
+
+/* Dark mode class */
+.dark-mode {
+  --el-bg-color: #0f1117;
+  --el-bg-color-page: #0f1117;
+  --el-bg-color-overlay: #1a2030;
+  --el-fill-color: #1e2535;
+  --el-fill-color-light: #1a2030;
+  --el-fill-color-lighter: #161b27;
+  --el-border-color: #2a3548;
+  --el-border-color-light: #1e2535;
+  --el-text-color-primary: #e8eaf0;
+  --el-text-color-regular: #9ba3b8;
+  --el-text-color-secondary: #9ba3b8;
+  --el-text-color-placeholder: #6b7591;
+  --el-text-color-disabled: #3a4860;
+  --sidebar-bg: #161b27;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--el-border-color); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--el-border-color-light); }
+
+/* NProgress */
+#nprogress .bar { background: var(--el-color-primary) !important; height: 3px !important; }
